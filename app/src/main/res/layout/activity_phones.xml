@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/allPhonesContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhonesActivity.PhonesActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCheckBoxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/iphoneCheckBox"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/iphone" />
+
+        <CheckBox
+            android:id="@+id/samsungCheckBox"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="@string/samsung" />
+
+        <CheckBox
+            android:id="@+id/sonyCheckBox"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sony" />
+
+        <CheckBox
+            android:id="@+id/huaweiCheckBox"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="@string/huawei" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLinearLayoutCheckBoxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutCheckBoxes">
+
+        <CheckBox
+            android:id="@+id/honorCheckBox"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/honor" />
+
+        <CheckBox
+            android:id="@+id/oppoCheckBox"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/oppo" />
+
+        <CheckBox
+            android:id="@+id/vivoCheckBox"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/vivo" />
+
+        <CheckBox
+            android:id="@+id/googleCheckBox"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:text="@string/google" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdLinearLayoutCheckBoxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/secondLinearLayoutCheckBoxes">
+        <CheckBox
+            android:id="@+id/xiaomiCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/xiaomi" />
+        <CheckBox
+            android:id="@+id/realmeCheckBox"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="@string/realme"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/priceFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thirdLinearLayoutCheckBoxes"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/minPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/minimum_price"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/maxPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/maximum_price"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="@string/filter"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/phonesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceFilter"
+        android:layout_marginTop="8dp" />
+
+
+</RelativeLayout>

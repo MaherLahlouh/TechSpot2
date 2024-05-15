@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile.EditProfile">
+
+    <TextView
+        android:id="@+id/userNameTxt"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/user_name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameTxt"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="19dp"
+        android:ems="50"
+        android:gravity="center"
+        android:hint="@string/user_name" />
+
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/userNameEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/email"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTxt"
+        android:layout_marginStart="32dp"
+        android:ems="50"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:hint="@string/email"/>
+
+    <TextView
+        android:id="@+id/phoneTxt"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/emailEditTxt"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/phone_number"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/phoneEditTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneTxt"
+        android:layout_marginStart="32dp"
+        android:ems="50"
+        android:inputType="phone"
+        android:gravity="center"
+        android:hint="@string/phone_number"/>
+
+    <TextView
+        android:id="@+id/addressTxt"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/phoneEditTxt"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/address"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/addressEditTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressTxt"
+        android:layout_marginStart="32dp"
+        android:ems="50"
+        android:gravity="center"
+        android:hint="@string/address"/>
+
+    <Button
+        android:id="@+id/submitChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressEditTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/submit_changes"/>
+
+
+
+
+</RelativeLayout>

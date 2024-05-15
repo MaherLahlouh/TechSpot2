@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkGray">#333333</color>
+    <color name="background">#53868b</color>
+    <color name="deepBlue">#003366</color>
+    <color name="lightGray">#f2f2f2</color>
+    <color name="toolBarColor">#25D366</color>
+    <color name="backgroundColor">#808080</color>
+    <color name="shades">#1E232C</color>
+    <color name="error_color">#F32C18</color>
+    <color name="blue">#2196F3</color>
+    <color name="green">#4CAF50</color>
+    <color name="dark">#262626</color>
+    <color name="textWhiteButton">#FFFFFFFF</color>
+    <color name="textWhite">#1E232C</color>
+    <color name="appBackGround">#FFFFFF</color>
+    <color name="appTextGround">#050505</color>
+
+</resources>

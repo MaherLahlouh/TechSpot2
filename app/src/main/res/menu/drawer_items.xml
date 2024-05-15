@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addItmes"
+        android:title="Add Phones And Laptops"
+        android:icon="@drawable/add_items"/>
+
+    <item
+        android:id="@+id/addAccessories"
+        android:title="Add Accessories"
+        android:icon="@drawable/holder_accessories"/>
+
+    <item
+        android:id="@+id/addComputers"
+        android:title="Add Computers"
+        android:icon="@drawable/gaming_computer"/>
+
+    <item
+        android:id="@+id/changeItemsQuantity"
+        android:title="Item Quantity"
+        android:icon="@drawable/change_quantity"/>
+
+    <item
+        android:id="@+id/itemsCouponsAndDiscounts"
+        android:title="Coupons And Discounts"
+        android:icon="@drawable/coupons_discounts"/>
+
+    <item
+        android:id="@+id/showUserSuggestions"
+        android:title="User Suggestions "
+        android:icon="@drawable/user_suggestions"/>
+
+    <item
+        android:id="@+id/adminLogout"
+        android:title="Logout"
+        android:icon="@drawable/logout"/>
+
+
+
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/allComputersContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComputerActivity.ComputerActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCheckBoxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+
+        <CheckBox
+            android:id="@+id/samsungCheckBox"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="@string/samsung"
+            />
+
+        <CheckBox
+            android:id="@+id/ddr4CheckBox"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ddr4"/>
+
+        <CheckBox
+            android:id="@+id/kingstonCheckBox"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="Kingston"/>
+
+        <CheckBox
+            android:id="@+id/amdCheckBox"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="AMD"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondlinearLayoutCheckBoxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/linearLayoutCheckBoxes"
+        android:orientation="horizontal">
+
+
+
+        <CheckBox
+            android:id="@+id/nvidiaCheckBox"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nvidia"/>
+
+        <CheckBox
+            android:id="@+id/intelCheckBox"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Intel"/>
+
+        <CheckBox
+            android:id="@+id/corsairCheckBox"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Corsair"/>
+
+        <CheckBox
+            android:id="@+id/lgCheckBox"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="LG"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/priceFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_below="@id/secondlinearLayoutCheckBoxes">
+
+        <EditText
+            android:id="@+id/minPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/minimum_price"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/maxPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/maximum_price"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/design_default_color_error"/>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/computerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceFilter"
+        android:layout_marginTop="8dp" />
+
+
+</RelativeLayout>

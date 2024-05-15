@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminComputers.AdminComputers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/computerBrandName"
+            android:layout_width="309dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:ems="20"
+            android:hint="Brand Name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/category_spinner"
+            app:layout_constraintStart_toStartOf="@+id/category_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/category_spinner" />
+
+        <EditText
+            android:id="@+id/computerItemName"
+            android:layout_width="308dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="9dp"
+            android:ems="50"
+            android:hint="Item Name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/adminBrand"
+            app:layout_constraintStart_toStartOf="@+id/adminBrand"
+            app:layout_constraintTop_toBottomOf="@+id/adminBrand" />
+
+        <EditText
+            android:id="@+id/computerDescription"
+            android:layout_width="308dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="9dp"
+            android:ems="1000"
+            android:hint="Description"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/adminBrand"
+            app:layout_constraintStart_toStartOf="@+id/adminBrand"
+            app:layout_constraintTop_toBottomOf="@+id/adminBrand" />
+
+        <EditText
+            android:id="@+id/computersPrice"
+            android:layout_width="309dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:ems="20"
+            android:hint="Price"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/adminItem"
+            app:layout_constraintStart_toStartOf="@+id/adminItem"
+            app:layout_constraintTop_toBottomOf="@+id/adminItem"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="294dp" />
+
+        <EditText
+            android:id="@+id/computerQuantity"
+            android:layout_width="309dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:ems="1"
+            android:hint="Quantity"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/computersPrice"
+            app:layout_constraintStart_toStartOf="@+id/computersPrice"
+            app:layout_constraintTop_toBottomOf="@+id/computersPrice"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="294dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addToDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/shades"
+                android:text="Add"
+                android:textColor="@color/textWhiteButton"
+                app:layout_constraintEnd_toStartOf="@+id/button_see_comments"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_admin" />
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/shades"
+                android:text="Clear"
+                android:textColor="@color/textWhiteButton" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/computerPic"
+            android:layout_width="136dp"
+            android:layout_height="124dp"
+            app:layout_constraintEnd_toEndOf="@+id/aGPU"
+            app:layout_constraintStart_toStartOf="@+id/aGPU"
+            app:layout_constraintTop_toBottomOf="@+id/aGPU"
+            app:srcCompat="@drawable/baseline_add_photo_alternate_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imagesRV"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

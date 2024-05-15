@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    tools:context=".AdminActivity.adminActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-193dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="309dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="16dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/adminBrand"
+                android:layout_width="309dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="8dp"
+                android:ems="20"
+                android:hint="Brand Name"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/category_spinner"
+                app:layout_constraintStart_toStartOf="@+id/category_spinner"
+                app:layout_constraintTop_toBottomOf="@+id/category_spinner" />
+
+            <EditText
+                android:id="@+id/adminItem"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="Item Name"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/adminBrand"
+                app:layout_constraintStart_toStartOf="@+id/adminBrand"
+                app:layout_constraintTop_toBottomOf="@+id/adminBrand" />
+
+            <EditText
+                android:id="@+id/ItemPrice"
+                android:layout_width="309dp"
+                android:layout_height="62dp"
+                android:ems="20"
+                android:hint="Price"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/adminItem"
+                app:layout_constraintStart_toStartOf="@+id/adminItem"
+                app:layout_constraintTop_toBottomOf="@+id/adminItem"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="294dp" />
+
+            <EditText
+                android:id="@+id/aOperatingSystem"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="Operating System"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/ItemPrice"
+                app:layout_constraintStart_toStartOf="@+id/ItemPrice"
+                app:layout_constraintTop_toBottomOf="@+id/ItemPrice" />
+
+            <EditText
+                android:id="@+id/aCPU"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="CPU"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aOperatingSystem"
+                app:layout_constraintStart_toStartOf="@+id/aOperatingSystem"
+                app:layout_constraintTop_toBottomOf="@+id/aOperatingSystem" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/aRAM"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:hint="RAM"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/aBackCamera"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="Back Camera"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aRAM"
+                app:layout_constraintStart_toStartOf="@+id/aRAM"
+                app:layout_constraintTop_toBottomOf="@+id/aRAM" />
+
+            <EditText
+                android:id="@+id/aFrontCamera"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="Front Camera"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aBackCamera"
+                app:layout_constraintStart_toStartOf="@+id/aBackCamera"
+                app:layout_constraintTop_toBottomOf="@+id/aBackCamera" />
+
+            <EditText
+                android:id="@+id/aDisplay"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="Display"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aFrontCamera"
+                app:layout_constraintStart_toStartOf="@+id/aFrontCamera"
+                app:layout_constraintTop_toBottomOf="@+id/aFrontCamera" />
+
+            <EditText
+                android:id="@+id/aBattery"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="Battery"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aDisplay"
+                app:layout_constraintStart_toStartOf="@+id/aDisplay"
+                app:layout_constraintTop_toBottomOf="@+id/aDisplay" />
+
+            <EditText
+                android:id="@+id/aMemory"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="Memory"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aBattery"
+                app:layout_constraintStart_toStartOf="@+id/aBattery"
+                app:layout_constraintTop_toBottomOf="@+id/aBattery" />
+
+            <EditText
+                android:id="@+id/aGPU"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="9dp"
+                android:ems="50"
+                android:hint="GPU"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aMemory"
+                app:layout_constraintStart_toStartOf="@+id/aMemory"
+                app:layout_constraintTop_toBottomOf="@+id/aMemory" />
+
+            <EditText
+                android:id="@+id/phonesLaptopsQuantity"
+                android:layout_width="309dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="4dp"
+                android:ems="1"
+                android:hint="Quantity"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/aGPU"
+                app:layout_constraintStart_toStartOf="@+id/aGPU"
+                app:layout_constraintTop_toBottomOf="@+id/aGPU"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="294dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Add"
+                    android:background="@color/shades"
+                    android:textColor="@color/textWhiteButton"
+                    app:layout_constraintEnd_toStartOf="@+id/button_see_comments"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_admin" />
+
+                <Button
+                    android:id="@+id/clear_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/shades"
+                    android:textColor="@color/textWhiteButton"
+                    android:text="Clear"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView_admin"
+                android:layout_width="136dp"
+                android:layout_height="124dp"
+                app:layout_constraintEnd_toEndOf="@+id/aGPU"
+                app:layout_constraintStart_toStartOf="@+id/aGPU"
+                app:layout_constraintTop_toBottomOf="@+id/aGPU"
+                app:srcCompat="@drawable/baseline_add_photo_alternate_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imagesRV"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_items" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

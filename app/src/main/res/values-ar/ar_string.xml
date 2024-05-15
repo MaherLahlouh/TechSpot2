@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="search">ابحث</string>
+    <string name="acer">Acer</string>
+    <string name="dell">Dell</string>
+    <string name="apple">Apple</string>
+    <string name="hp">HP</string>
+    <string name="lenovo">Lenovo</string>
+    <string name="msi">MSI</string>
+    <string name="asus">Asus</string>
+    <string name="other">اخر</string>
+    <string name="search_here"> ابحث هنا</string>
+    <string name="filter">فلتر</string>
+    <string name="maximum_price">السعر الأعلى</string>
+    <string name="minimum_price"> السعر الأقل</string>
+    <string name="setting">الأعدادات</string>
+    <string name="user_profile_name">اسم المستخذم</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="about_us">من نحن؟</string>
+    <string name="change_languages">تغيير اللغة</string>
+    <string name="night_mode">الوضع الليلي</string>
+    <string name="search_here_phone">ابحث هنا</string>
+    <string name="your_orders">طلباتك</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="logout_message">هل انتا متأكد من تسجيل الخروج؟</string>
+    <string name="yes_btn">نعم</string>
+    <string name="no_btn">لا</string>
+    <string name="total_price">السعر الكلي =</string>
+    <string name="operating_system">نظام التشغيل :</string>
+    <string name="back_camera">الكاميرة الخلفية:</string>
+    <string name="front_camera">الكاميرة الامامية</string>
+    <string name="battery">البطارية:</string>
+    <string name="graphics_processing_unit">كرت الشاشة:</string>
+    <string name="cpu_des">وحدة المعالجة المركزية:</string>
+    <string name="discount">خصم</string>
+    <string name="subtotal">المجموع الفرعي</string>
+    <string name="shipping">الشحن</string>
+    <string name="total">الحساب الكلي</string>
+    <string name="check_out">الدفع</string>
+    <string name="ram_details">الذاكرة العشوائية:</string>
+    <string name="display">الشاشة:</string>
+    <string name="memory">الذاكرة:</string>
+    <string name="price">السعر:</string>
+    <string name="add_to_cart">أضف إلى السلة</string>
+    <string name="confirm_order">تأكيد الطلب</string>
+    <string name="monitors">الشاشة:</string>
+    <string name="cooling">التبريد:</string>
+    <string name="power_supply">مزود الطاقة:</string>
+    <string name="iphone">ايفون</string>
+    <string name="samsung">سامسونج</string>
+    <string name="sony">سوني</string>
+    <string name="huawei">هواوي</string>
+    <string name="xiaomi">شاومي</string>
+    <string name="honor">هونر</string>
+    <string name="oppo">اوبو</string>
+    <string name="google">جوجل</string>
+
+    <string name="user_email">بريد المستخدم</string>
+    <string name="user_address">عنوان المستخدم</string>
+    <string name="user_phone_number">رقم هاتف المستخدم</string>
+    <string name="vivo">فيفو</string>
+    <string name="realme">ريلمي</string>
+    <string name="remember_me">تذكرني</string>
+    <string name="location">الموقع</string>
+    <!-- Main Activity Translation -->
+    <string name="phones">الهواتف</string>
+    <string name="laptops">اللابتوب</string>
+    <string name="computers">كومبيوترات</string>
+    <string name="accessories">اكسسوارات</string>
+    <string name="news">اخبار</string>
+    <string name="suggestions">اقتراحات</string>
+    <!-- Login And Sgin Up Translation -->
+    <string name="please_enter_your_email">من فضلك أدخل بريدك الإلكتروني</string>
+    <string name="remember_password_login">هل لديك حساب؟ <font color="#02A1C4">سجّل الآن</font></string>
+    <string name="remember_password">تذكر كلمة المرور؟ <font color="#02A1C4">تسجيل الدخول</font></string>
+    <string name="agree_and_register">موافق وسجّل</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="address">العنوان</string>
+    <string name="submit_changes">حفظ التغييرات</string>
+    <string name="new_user_join_us_now">مستخدم جديد؟ انضم إلينا الآن!</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="don_t_worry_it_occurs_please_enter_the_email_address_linked_with_your_account">لا تقلق! هذا يحدث. الرجاء إدخال عنوان البريد الإلكتروني المرتبط بحسابك.</string>
+
+    <!-- For Navigation Drawer-->
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <!-- Bottom Navigation -->
+    <string name="home">الرئيسية</string>
+    <string name="cart">السلة</string>
+    <string name="credit_card">بطاقة الائتمان</string>
+    <string name="settings">الإعدادات</string>
+    <string name="please_enter_your_password">الرجاء إدخال كلمة المرور الخاصة بك</string>
+    <string name="welcome_back_glad_to_see_you_again">مرحباً بعودتك! سعداء برؤيتك مرة أخرى!</string>
+    <!-- Admin Side Quantity  -->
+    <string name="add">إضافة</string>
+    <string name="added_quantity">الكمية المضافة</string>
+    <string name="item_name">اسم العنصر</string>
+    <string name="item_brand">اسم العلامة التجارية</string>
+    <string name="or">أو</string>
+    <string name="item_id">معرف العنصر</string>
+    <string name="item_category">فئة العنصر</string>
+    <!-- Admin Side Accessories  -->
+    <string name="colors">الألوان:</string>
+    <string name="brand_name">اسم العلامة التجارية</string>
+    <string name="compatible_devices">الأجهزة المتوافقة</string>
+    <string name="material">المواد</string>
+    <string name="form_factor">المصنع</string>
+    <string name="screen_size">حجم الشاشة</string>
+    <string name="special_features">الميزات الخاصة</string>
+    <string name="charger">الشاحن</string>
+    <string name="cables">الكوابل</string>
+    <string name="battery_capacity">سعة البطارية</string>
+    <string name="enter_your_suggestion">أدخل اقتراحك</string>
+    <string name="fell_free_and_write_your_suggestion">لا تتردد في كتابة اقتراحك</string>
+    <string name="welcome_to_suggestions">مرحبًا بك في الاقتراحات</string>
+    <string name="payment_has_been_successfully_completed">تمت عملية الدفع بنجاح</string>
+
+    <string name="home_bottom_menu">الفصحة الرئيسية</string>
+    <string name="cart_bottom_menu">السلة</string>
+    <string name="location_bottom_menu">الموقع</string>
+    <string name="credit_card_bottom_menu">الدفع</string>
+    <string name="settings_bottom_menu">الاعدادات</string>
+</resources>

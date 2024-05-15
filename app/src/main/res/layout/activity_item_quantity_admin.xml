@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".itemQuantityAdmin.itemQuantityAdmin">
+
+    <EditText
+        android:id="@+id/ItemCategory"
+        android:layout_width="308dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="9dp"
+        android:ems="50"
+        android:hint="@string/item_category"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/ItemID"
+        android:layout_width="308dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="9dp"
+        android:ems="50"
+        android:hint="@string/item_id"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="@+id/ItemCategory"
+        app:layout_constraintStart_toStartOf="@+id/ItemCategory"
+        app:layout_constraintTop_toBottomOf="@+id/ItemCategory"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/ItemID"
+        app:layout_constraintStart_toStartOf="@+id/ItemID"
+        app:layout_constraintTop_toBottomOf="@+id/ItemID"/>
+
+    <EditText
+        android:id="@+id/ItemBrand"
+        android:layout_width="309dp"
+        android:layout_height="62dp"
+        android:ems="20"
+        android:hint="@string/item_brand"
+        android:inputType="text"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/OR"
+        app:layout_constraintStart_toStartOf="@+id/OR"
+        app:layout_constraintTop_toBottomOf="@+id/OR"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <EditText
+        android:id="@+id/ItemName"
+        android:layout_width="308dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="9dp"
+        android:ems="50"
+        android:hint="@string/item_name"
+        android:inputType="text"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/ItemBrand"
+        app:layout_constraintStart_toStartOf="@+id/ItemBrand"
+        app:layout_constraintTop_toBottomOf="@+id/ItemBrand" />
+    <EditText
+        android:id="@+id/AddedQuantity"
+        android:layout_width="308dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="9dp"
+        android:ems="50"
+        android:hint="@string/added_quantity"
+        android:inputType="text"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/ItemName"
+        app:layout_constraintStart_toStartOf="@+id/ItemName"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddedQuantity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

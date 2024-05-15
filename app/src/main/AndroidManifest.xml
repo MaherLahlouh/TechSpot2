@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".BaseActivity.AppClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/shopping_online"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/shopping_online"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TechSpot"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".PaySuccessActivity.PaySuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminComputers.AdminComputers"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity.adminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAccessories.AdminAccessories"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".itemQuantityAdmin.itemQuantityAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".DiscountsAdmin.DiscountsAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".UserCommentActivity.UserCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneAndLaptopDetails.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerDetails.ComputerDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccessoriesDetails.AccessoriesDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AccessoriesActivity.AccessoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerActivity.ComputerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LaptopActivity.LaptopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuggestionsActivity.SuggestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhonesActivity.PhonesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SginUpActivity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCa9eK6erMF4LFis48OP80JUap7SL4IxJ4" />
+    </application>
+
+</manifest>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/viewPagerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- ViewPager2 -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quantityLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/viewPagerLayout">
+
+            <Button
+                android:id="@+id/minusButton"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:gravity="center"
+                android:fontFamily="@font/bold"
+                android:textSize="20sp"
+                android:layout_below="@id/viewPager2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/quantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/minusButton"
+                android:layout_toEndOf="@id/minusButton"
+                android:text=""
+                android:gravity="center"
+                android:fontFamily="@font/bold"
+                android:layout_marginStart="4dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/plusButton"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:gravity="center"
+                android:fontFamily="@font/bold"
+                android:layout_marginTop="2dp"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@id/minusButton"
+                android:layout_toEndOf="@id/quantityText"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/colorAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantityLayout"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/colorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/firstColorButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/circle_button_design"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@+id/colorName"
+                app:layout_constraintTop_toBottomOf="@+id/colorName" />
+
+            <Button
+                android:id="@+id/secondColorButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle_button_design"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/firstColorButton"
+                app:layout_constraintTop_toTopOf="@+id/firstColorButton" />
+
+            <Button
+                android:id="@+id/thirdColorButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle_button_design"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/secondColorButton"
+                app:layout_constraintTop_toTopOf="@+id/secondColorButton" />
+
+            <Button
+                android:id="@+id/fourthColorButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle_button_design"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/thirdColorButton"
+                app:layout_constraintTop_toTopOf="@+id/thirdColorButton" />
+
+            <Button
+                android:id="@+id/fifthColorButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle_button_design"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/fourthColorButton"
+                app:layout_constraintTop_toTopOf="@+id/fourthColorButton" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemNameAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/colorAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textItemName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="HeadPhone"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/itemName"
+                app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/compatibleAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemNameAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/compatibleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compatible Devices:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/compatibleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="iPhone 14 Pro Max"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/compatibleName"
+                app:layout_constraintTop_toBottomOf="@+id/compatibleName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/materialAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/compatibleAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/materialName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Material:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/materialText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Microfiber, Polycarbonate"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/materialName"
+                app:layout_constraintTop_toBottomOf="@+id/materialName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/factorAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/materialAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/factorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form Factor:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/factorText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="On Ear"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/factorName"
+                app:layout_constraintTop_toBottomOf="@+id/factorName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/screenSizeAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/factorAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/screenSizeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Screen Size:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/screenSizeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="40 Millimeters"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/screenSizeName"
+                app:layout_constraintTop_toBottomOf="@+id/screenSizeName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/specialFeatureAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screenSizeAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/specialFeatureName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Feature:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/specialFeatureText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Cycle Tracking, Activity Tracker, GPS, Voice Control, Heart Rate Monitor"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/specialFeatureName"
+                app:layout_constraintTop_toBottomOf="@+id/specialFeatureName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chargerAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/specialFeatureAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/chargerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charger:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chargerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="100 W"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/chargerName"
+                app:layout_constraintTop_toBottomOf="@+id/chargerName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cablesAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chargerAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/cablesName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cables:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cablesText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Cable Type-C"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cablesName"
+                app:layout_constraintTop_toBottomOf="@+id/cablesName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/batteryCapacityAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cablesAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/batteryCapacityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Capacity:"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/batteryCapacityText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="10000 Milliamp Hours"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/batteryCapacityName"
+                app:layout_constraintTop_toBottomOf="@+id/batteryCapacityName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/priceAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/batteryCapacityAttribute"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/priceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="750 JD"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/priceName"
+                app:layout_constraintTop_toBottomOf="@+id/priceName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <EditText
+            android:id="@+id/userCommentsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceAttribute"
+            android:layout_marginTop="8dp"
+            android:maxLines="5"
+            android:drawableRight="@drawable/send_24"
+            android:hint="Write Your Comment" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userCommentsEditText"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/cartButton"
+            android:layout_width="330dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/recyclerViewComments"
+            android:backgroundTint="@color/design_default_color_error"
+            android:drawableRight="@drawable/empty_cart_32"
+            android:text="@string/add_to_cart"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+</ScrollView>
