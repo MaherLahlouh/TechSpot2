@@ -38,20 +38,24 @@ dependencies {
     implementation libs.firebase.database
     implementation libs.firebase.auth
     implementation libs.firebase.storage
+    implementation libs.firebase.messaging
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
     //Location Library
     implementation("com.google.android.gms:play-services-maps:18.2.0")
-    // Payment Visa
-    implementation "com.stripe:stripe-java:25.0.0"
-    implementation "com.stripe:stripe-android:20.40.4"
-    implementation 'com.android.volley:volley:1.2.1'
+
     // picasso image library
     implementation 'com.squareup.picasso:picasso:2.8'
     //Firebase
     implementation platform('com.google.firebase:firebase-bom:33.0.0')
     implementation 'com.google.firebase:firebase-analytics'
+    // FireBase Try Libraries for google sign in
+    implementation ("com.google.firebase:firebase-core:21.1.1")
+    implementation (libs.firebase.database.v1601)
+    implementation (libs.firebase.auth.v1601)
+    implementation ("com.google.android.gms:play-services-auth:21.1.1")
+    implementation ("com.google.android.gms:play-services-identity:18.0.1")
 
 
 }

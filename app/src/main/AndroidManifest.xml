@@ -103,7 +103,15 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCa9eK6erMF4LFis48OP80JUap7SL4IxJ4" />
+            android:value="AIzaSyCa9eK6erMF4LFis48OP80JUap7SL4IxJ4" /><!-- Api For Map -->
+
+        <service android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

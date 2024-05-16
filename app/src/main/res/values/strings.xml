@@ -127,6 +127,10 @@
     <string name="ddr4">DDR4</string>
     <string name="nvidia">Nvidia</string>
     <string name="description">Description</string>
+
+    <string name="default_web_client_id" translatable="false">xxxxxxxx</string>
+
+
     <!--                                                 -->
     <string-array name="catname">
         <item>Laptops</item>
